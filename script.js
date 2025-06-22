@@ -10,19 +10,6 @@ login.addEventListener("mouseenter", () => {
 login.addEventListener("mouseleave", () => {
   collapseLogin();
 });
-btn.addEventListener("click",()=>{
-    if(i.classList.contains("fa-toggle-on")){
-        i.classList.add("fa-toggle-off");    
-        i.classList.remove("fa-toggle-on");
-        collapseLogin();
-    }
-    else{
-        i.classList.remove("fa-toggle-off");    
-        i.classList.add("fa-toggle-on");
-        expandLogin();
-    }    
-});
-
 function expandLogin() {
 let border = document.querySelector(".border-anim");
 login.addEventListener("mousemove", () => {
